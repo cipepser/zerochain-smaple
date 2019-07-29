@@ -261,5 +261,15 @@ Encrypted balance: 0x4f2969a6b3f55c62e27327d0306208c3dbb293dee3e357c624d7db1d0b8
 Encrypted pending transfer: 0x00
 ```
 
+## 3. Confidential Payment
+
+- 3.2.の`conf_transfer module`のリンクが切れている。
+- Pending transferの`alice`、`bob`（大文字が小文字になっている）
+
+`confidential_transfer`は内部で3つの機能を呼ぶ。
+- `roll_over`: 非同期にtxを送る。フロントランニング防止。
+- `validate_proof`: zk proofsのvalidation
+- `?`: 暗号化されたストレージ上のデータを変更する
+
 ## References
 - [Introduction \- Zerochain Book](https://layerxcom.github.io/zerochain-book/ch00-00-introduction.html)
